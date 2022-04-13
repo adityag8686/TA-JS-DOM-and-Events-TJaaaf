@@ -36,7 +36,7 @@ img {
 h1{
   text-align: center;
 }
-.flex{
+.boxes{
   display: flex;
   justify-content: center;
   align-items: center;
