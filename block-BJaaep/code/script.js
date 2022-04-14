@@ -1,4 +1,4 @@
-let allboxes =document.querySelectorAll(".box");
+let allboxes =document.querySelectorAll(".first li");
 allboxes.forEach((ele,index)=>{
     ele.addEventListener("click",(event)=>{
         event.target.innerText = index + 1;
@@ -9,14 +9,15 @@ allboxes.forEach((ele,index)=>{
 });
 
 let boxSecond = document.querySelectorAll(".second");
-// let li = boxSecond.children[0]
-// li.setAttribute("data-text",1)
-function handler(){
-    boxSecond.forEach((ele,i) => {
-        ele.setAttribute("data-text", i+1)
-    })
-}
-
 
 let box = document.querySelector(".secondBox")
-box.addEventListener("click",handler)
+box.addEventListener("click",(event) => {
+    boxSecond.forEach((ele,i) => {
+        ele.setAttribute("data-text", i+1)
+    });
+    let text = event.target.dataset.text;
+    event.target.innerText = text;
+    setTimeout(()=>{
+        event.target.innerText = ""
+    },1500)
+});
