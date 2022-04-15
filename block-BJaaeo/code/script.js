@@ -3,7 +3,7 @@ let buttons = document.querySelectorAll(".btn");
 
 let initialValue = 0;
 
-function operations(event) {
+function handle(event) {
     if(event.target.classList.contains('btn-equal')){
         input.innerText = eval(input.innerText);
         return input.innerText;
@@ -19,5 +19,5 @@ function operations(event) {
 }
 
 buttons.forEach((ele) => {
-    ele.addEventListener('click', operations);
+    ele.addEventListener('click', handle);
 })
