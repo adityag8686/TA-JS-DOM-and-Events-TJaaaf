@@ -11,7 +11,7 @@ function handleSubmit (event){
     userInfo.rate = form.elements.range.value;
     userInfo.drone = form.elements.drone.value;
     userInfo.terms = form.elements.terms.checked;
-    formBox(userInfo)
+    formBox(userInfo);
 }
 form.addEventListener("submit", handleSubmit);
 
