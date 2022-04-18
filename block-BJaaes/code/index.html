@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation 👇</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Create Account</h1>
+      </header>
+      <form>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your name"
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="username">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="ijohnhoro@gmail.com"
+          />
+          <small></small>
+        </div>
+        <div class="form-control error">
+          <label for="username">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control success">
+          <label for="username">Confirm Password</label>
+          <input
+            type="password"
+            id="pass-check"
+            name="passwordCheck"
+            placeholder="Re-enter your password"
+          />
+          <small></small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
