@@ -71,6 +71,7 @@ function handleSubmit(event) {
     if (password !== passwordCheck){
         usernameError.passwordCheck = "both are not same";
         error("passwordCheck");
+        error("password");
     }
     else{
         success("password");
