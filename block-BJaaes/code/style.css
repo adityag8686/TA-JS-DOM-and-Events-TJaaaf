@@ -35,3 +35,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+h1{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.form-control{
+  margin-bottom: 20px;
+}
+input{
+  margin-left: 20px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
