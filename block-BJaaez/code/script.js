@@ -50,4 +50,4 @@ function handleSearch(event){
 
 search.addEventListener("input", handleSearch);
 block(allPeople);
-createTag(allTags)
+createTag(allTags);
